@@ -44,7 +44,7 @@ if (isset($_REQUEST['guardar'])) {
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <form action="panel.php?modulo=crearUsuario" method="post">
+                            <form action="panel.php?modulo=crearUsuarios" method="post">
                                 <div class="form-group">
                                     <label>Email</label>
                                     <input type="email" name="email" id="" class="form-control" placeholder="Email"
