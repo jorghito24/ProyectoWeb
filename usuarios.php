@@ -48,7 +48,7 @@ if (isset($_REQUEST['idBorrar'])) {
                                         <th>Nombre</th>
                                         <th>Email</th>
                                         <th>Acciones
-                                            <a href="panel.php?modulo=crearUsuario"><i class="fa fa-plus"
+                                            <a href="panel.php?modulo=crearUsuarios"><i class="fa fa-plus"
                                                     aria-hidden="true"></i></a>
                                         </th>
 
@@ -57,7 +57,7 @@ if (isset($_REQUEST['idBorrar'])) {
                                 <tbody>
                                     <?php
 
-                                    $query = "SELECT id,email,nombre from usuarios; ";
+                                    $query = "SELECT id,email,nombre from usuarios ;";
                                     $res = mysqli_query($con, $query);
 
                                     while ($row = mysqli_fetch_assoc($res)) {
