@@ -2,6 +2,10 @@
 <html lang="en">
 <?php
   session_start();
+  if(isset($_REQUEST['session']) && $_REQUEST['session']== "cerrar"){
+    session_destroy();
+    header("location: index.php");
+  }
   if(isset($_SESSION['id'])==false){
     header("location: index.php");
   }
@@ -62,8 +66,15 @@
 
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="editarPerfil.php">
+        <a class="nav-link" data-toggle="dropdown" href="panel.php?modulo=editarUsuarios&id=<?php echo $_SESSION['id'];?>">
           <i class="far fa-user"></i>
+          
+        </a>
+       
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="panel.php?modulo=&session=cerrar">
+          <i class="fas fa-door-closed"></i>
           
         </a>
        
