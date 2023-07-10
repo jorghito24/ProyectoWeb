@@ -49,7 +49,7 @@ $row = mysqli_fetch_assoc($res);
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <form action="panel.php?modulo=editarUsuario" method="post">
+                            <form action="panel.php?modulo=editarUsuarios" method="post">
                                 <div class="form-group">
                                     <label>Email</label>
                                     <input type="email" name="email" id="" class="form-control"
