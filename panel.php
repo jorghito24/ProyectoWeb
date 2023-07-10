@@ -170,6 +170,9 @@
   if($modulo=="crearUsuarios"){
     include_once"crearUsuario.php";
   }
+  if($modulo=="editarUsuarios"){
+    include_once"editarUsuario.php";
+  }
   ?>
   
   

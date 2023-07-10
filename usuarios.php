@@ -72,7 +72,7 @@ if (isset($_REQUEST['idBorrar'])) {
                                                 <?php echo $row['email'] ?>
                                             </td>
                                             <td>
-                                                <a href="panel.php?modulo=editarUsuario&id=<?php echo $row['id'] ?>"> <i
+                                                <a href="panel.php?modulo=editarUsuarios&id=<?php echo $row['id'] ?>"> <i
                                                         class="fas fa-edit    "></i></a>
                                                 <a href="panel.php?modulo=usuarios&idBorrar=<?php echo $row['id'] ?>"
                                                     class="text-danger borrar"> <i class="fas fa-trash    "></i></a>
